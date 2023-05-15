@@ -1,0 +1,91 @@
+#search {
+    width: 67%;
+    margin-left: 260px;
+}
+
+.home-cards {
+    width: 80%;
+    text-align: center;
+    margin-left: 10%;
+
+}
+
+.home-cards>.card {
+    display: inline-block;
+}
+
+
+
+#search a {
+    margin-top: 4px;
+    text-decoration: none;
+    margin-left: 20px;
+    margin-right: -215px;
+}
+
+#Addempbut .Add_button {
+    text-decoration: none;
+    color: black;
+    margin-left: 1290px;
+    font-size: large;
+}
+
+.Add_button {
+    position: relative;
+    width: 200px;
+    height: 30.5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    background-color: black;
+}
+
+.Add_button,
+.Add_button__icon,
+.Add_button__text {
+    transition: all 0.3s;
+}
+
+.Add_button .Add_button__text {
+    transform: translateX(30px);
+    color: #fff;
+    font-weight: 600;
+}
+
+.Add_button .Add_button__icon {
+    position: absolute;
+    transform: translateX(152px);
+    height: 100%;
+    width: 39px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Add_button .svg {
+    width: 30px;
+    stroke: #fff;
+}
+
+.Add_button:hover {
+    background: black;
+}
+
+.Add_button:hover .Add_button__text {
+    color: transparent;
+}
+
+.Add_button:hover .Add_button__icon {
+    width: 200px;
+    transform: translateX(0);
+}
+
+.Add_button:active .Add_button__icon {
+    background-color: black;
+}
+
+.Add_button:active {
+    border: 1px solid black;
+}

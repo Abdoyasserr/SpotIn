@@ -1,0 +1,71 @@
+.home-cards-branch {
+    display: flex;
+    width: 56%;
+    text-align: center;
+    margin-left: 28%;
+    margin-top: 5%;
+}
+
+.home-cards-branch>.card {
+    display: inline-block;
+}
+
+.card-btn {
+    text-decoration: none !important;
+    font-size: 10pt !important;
+    font-weight: 700 !important;
+}
+
+.card-btn:hover {
+    text-decoration: underline !important;
+
+}
+
+.form-control::placeholder {
+    text-align: center;
+}
+
+.card-branch {
+    border-radius: 5px;
+    border: 1px solid white;
+    box-shadow: 0 0 5px black;
+    width: 270px;
+    height: 390px;
+    margin-left: 55px;
+
+}
+
+.card-image-branch img {
+    width: 249px;
+    margin-top: 5px;
+}
+
+
+#branch_id {
+    font-weight: 900;
+    margin: 0px;
+    padding-top: 15px;
+}
+
+#Photo-branch {
+    background-position: center;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-top: -10px;
+    margin-bottom: 5px;
+    background-size: cover;
+}
+
+.card-name-branch,
+.card-email-branch,
+.card-phone-branch {
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+}
+
+.card-name-branch {
+    font-weight: 900;
+    font-size: 25px;
+}

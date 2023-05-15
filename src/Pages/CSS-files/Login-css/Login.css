@@ -1,0 +1,272 @@
+.row {
+    margin: 0px;
+}
+
+#login_img {
+    background-image: url("./Side\ Content.png");
+    background-size: cover;
+    background-position: center;
+    height: 740px;
+    width: 70%;
+}
+
+.container {
+    position: relative;
+}
+
+#logo {
+    width: 120px;
+    height: 40px;
+    margin-bottom: 30px;
+    margin-top: 25px;
+    cursor: pointer;
+}
+
+#p1 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    font-size: 50px;
+}
+
+#p2 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    font-size: 30px;
+    margin-top: -25px;
+}
+
+#p4,
+#p5,
+#p6 {
+    margin-top: -20px;
+}
+
+.row {
+    padding: 0;
+    margin: 0;
+}
+
+.Login_form {
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-left: 1250px;
+    margin-top: -500px;
+    border-radius: 20px;
+    position: relative;
+}
+
+.Login_form p {
+    width: 180px;
+    font-family: 'Lato', sans-serif;
+    margin-left: 30px;
+    padding-bottom: 20px;
+    font-size: 50px;
+    font-weight: 900;
+    color: black;
+}
+
+.input_email,
+.input_passsword {
+    padding: 10px 20px;
+    margin-left: 90px;
+    border-radius: 1rem;
+    border-color: black;
+    width: 345px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input_passsword {
+    margin-top: -20px;
+}
+
+.password-wrapper {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.password-toggle {
+    position: absolute;
+    margin-left: 400px;
+    margin-top: -52px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.password-toggle i {
+    font-size: 1.2em;
+}
+
+.password-input {
+    padding-right: 25px;
+}
+
+#hello {
+    position: absolute;
+    margin-top: -35px;
+    margin-left: 185px;
+    color: #999999;
+    cursor: pointer;
+}
+
+#emailOrPhoneError,
+#passwordError {
+    margin-top: -20px;
+    width: 345px;
+    font-size: 14px;
+    color: #C62828;
+    background: rgba(255, 0, 0, 0.1);
+    text-align: center;
+    padding: 5px 8px;
+    border-radius: 3px;
+    border: 1px solid #EF9A9A;
+    display: none;
+    margin-left: 90px;
+    height: 40px;
+}
+
+#error-message {
+    margin-top: -40px;
+    width: 330px;
+    font-size: 14px;
+    color: #C62828;
+    background: rgba(255, 0, 0, 0.1);
+    text-align: center;
+    border-radius: 3px;
+    border: 1px solid #EF9A9A;
+    display: none;
+    margin-left: 98px;
+    height: 30px;
+}
+
+.submit {
+    font-size: 40px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    color: white;
+    padding: -8px 20px;
+    border-radius: 1rem;
+    width: 345px;
+    height: 60px;
+    border: none;
+    background-color: #66d6ec;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 84px;
+    margin-top: -30px;
+    cursor: pointer;
+
+}
+
+.submit .span-mother {
+    display: flex;
+    overflow: hidden;
+}
+
+.submit:hover .span-mother {
+    position: absolute;
+}
+
+.submit:hover .span-mother span {
+    transform: translateY(1.2em);
+}
+
+.submit .span-mother span:nth-child(1) {
+    transition: .2s;
+}
+
+.submit .span-mother span:nth-child(2) {
+    transition: .3s;
+}
+
+.submit .span-mother span:nth-child(3) {
+    transition: .4s;
+}
+
+.submit .span-mother span:nth-child(4) {
+    transition: .5s;
+}
+
+.submit .span-mother span:nth-child(5) {
+    transition: .6s;
+}
+
+.submit .span-mother span:nth-child(6) {
+    transition: .7s;
+}
+
+.submit .span-mother2 {
+    display: flex;
+    position: absolute;
+    overflow: hidden;
+}
+
+.submit .span-mother2 span {
+    transform: translateY(-1.2em);
+}
+
+.submit:hover .span-mother2 span {
+    transform: translateY(0);
+}
+
+.submit .span-mother2 span {
+    transition: .2s;
+}
+
+.submit .span-mother2 span:nth-child(2) {
+    transition: .3s;
+}
+
+.submit .span-mother2 span:nth-child(3) {
+    transition: .4s;
+}
+
+.submit .span-mother2 span:nth-child(4) {
+    transition: .5s;
+}
+
+.submit .span-mother2 span:nth-child(5) {
+    transition: .6s;
+}
+
+.submit .span-mother2 span:nth-child(6) {
+    transition: .7s;
+}
+
+#Lasterror {
+    width: 271px;
+    color: red;
+    margin-left: 80px;
+    margin-top: 30px;
+}
+
+
+@media screen and (max-width: 700px) {
+    #login_img {
+        display: none;
+    }
+
+    #sign_in {
+        margin-left: 110px;
+        align-items: center;
+    }
+
+    .Login_form p {
+        width: 180px;
+        margin-left: 90px;
+    }
+
+}

@@ -1,0 +1,81 @@
+.card {
+    border: 1px solid white;
+    box-shadow: 0 0 5px black;
+    width: 240px;
+    height: 290px;
+    /* set a fixed height */
+    margin: 8px;
+    overflow: hidden;
+    /* hide overflowed content */
+}
+
+.card-image {
+    height: 250px;
+    /* set a fixed height for the image container */
+    overflow: hidden;
+    /* hide overflowed content */
+}
+
+.card-image img {
+    width: 100%;
+    /* make the image width 100% of its container */
+    height: 100%;
+    /* make the image height 100% of its container */
+    /* object-fit: cover; */
+    /* crop the image to fill its container */
+}
+
+.card-btn {
+    position: absolute;
+    /* add position absolute to the button */
+    bottom: 0;
+    /* position the button at the bottom */
+    right: 0;
+    /* position the button at the right */
+    left: 0;
+    /* position the button at the left */
+    margin: auto;
+    /* center the button horizontally */
+    text-decoration: none !important;
+    font-size: 10pt !important;
+    font-weight: 700 !important;
+    text-decoration: none !important;
+    font-size: 10pt !important;
+    font-weight: 700 !important;
+}
+
+.card-btn:hover {
+    text-decoration: underline !important;
+}
+
+.form-control::placeholder {
+    text-align: center;
+}
+
+h5 {
+    font-size: large;
+    font-weight: bold;
+}
+
+#Photo {
+    background-image: cover;
+    background-position: center;
+    width: 100px;
+    height: 90px;
+    border-radius: 50%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.card-name,
+.card-email,
+.card-phone,
+.card-branch {
+    text-align: center;
+    margin: 0;
+}
+
+.card-name {
+    font-weight: 900;
+    font-size: 17px;
+}

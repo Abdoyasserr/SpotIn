@@ -3,6 +3,12 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+// const cors = require("cors");
+// App.use(cors({
+//   origin: "http://127.0.0.1:8000",
+//   methods: ["GET", "POST"],
+
+// }))
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
