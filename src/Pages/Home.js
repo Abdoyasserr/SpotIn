@@ -10,35 +10,18 @@ import "./CSS-files/Home-css/test.css";
 
 function Home() {
     Title("SPOTIN | HOME");
-    // const [images, setImages] = useState([]);
-    // const [id, setID] = useState([]);
-    // const [name, setname] = useState([]);
-    // const [phonenumber, setphonenumber] = useState([]);
-    // const [email, setemail] = useState([]);
-    // const [department, setdepartment] = useState([]);
-    // const [branch_name, setbranch] = useState([]);
     const [photo, setphoto] = useState([]);
+    const [searchQuery, setSearchQuery] = useState("");
     useEffect(() => {
-        fetch("https://spot-in.online/api/authMgr/allemps",{
-            // method: 'GET',
-            // headers: {
-            
-            //     accept: 'application/json',
-            // },
-            // mode: 'no-cors'
-        }).then(
+        fetch("https://spot-in.online/api/authMgr/allemps").then(
             response => response.json().then(data => {
-                // setImages(data)
-                // setId(data)
-                // setname(data)
-                // setphonenumber(data)
-                // setemail(data)
-                // setdepartment(data)
-                // setbranch(data)
                 setphoto(data)
             })
         )
     }, [])
+
+    const filteredData = photo.filter(item => item.name.toLowerCase().includes(searchQuery.toLowerCase()));
+
     return (
         <>
             <div>
@@ -47,7 +30,7 @@ function Home() {
                 </div>
                 <div className="row my-3">
                     <div id="search" className="input-group">
-                        <input type="text" className="form-control" placeholder="Search" />
+                        <input type="text" className="form-control" placeholder="Search" onChange={(e) => setSearchQuery(e.target.value)} />
                         <a href="/Addemp">
                             <button type="button" className="Add_button">
                                 <span class="Add_button__text">Add Employee</span>
@@ -60,7 +43,7 @@ function Home() {
 
             </div>
             <div className="home-cards">
-                <Images data={photo} />
+                <Images data={filteredData} />
             </div>
 
         </>
