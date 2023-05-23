@@ -29,9 +29,9 @@ function Branches() {
                         <img id="Photo-branch" src={image1} alt="" />
                     </div>
                     <div>
-                        <p className="card-name-branch">Branch Elshrouk</p>
-                        <p className="card-email-branch">Elshrouk@gamil.com</p>
-                        <p className="card-phone-branch">01142314520</p>
+                        <p className="card-name-branch">El Shorouk Academy</p>
+                        <p className="card-email-branch">Elshorouk@gamil.com</p>
+                        <p className="card-phone-branch">01020414058</p>
                         {/* <a type="button" className="btn btn-block text-muted card-btn" data-bs-toggle="modal" data-bs-target="#Profile">
                             History
                         </a> */}
@@ -45,8 +45,8 @@ function Branches() {
                         <img id="Photo-branch" src={image2} alt="" />
                     </div>
                     <div>
-                        <p className="card-name-branch">Branch Elshrouk 2</p>
-                        <p className="card-email-branch">Elshrouk2@gamil.com</p>
+                        <p className="card-name-branch">Mass Communication</p>
+                        <p className="card-email-branch">Masscomm@gamil.com</p>
                         <p className="card-phone-branch">01142314520</p>
                         {/* <a type="button" className="btn btn-block text-muted card-btn" data-bs-toggle="modal" data-bs-target="#Profile">
                             History

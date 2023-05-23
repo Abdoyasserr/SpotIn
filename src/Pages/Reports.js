@@ -4,6 +4,7 @@ import Sidebar from "./Sidebar";
 import "./CSS-files/Reports-css/Table.css";
 import Table from "./Table";
 
+
 function Reports() {
   Title("SPOTIN | Reports");
   const [data, setData] = useState([]);
@@ -16,8 +17,11 @@ function Reports() {
   }, []);
 
   const filteredData = data.filter((item) =>
-    item.name.toLowerCase().includes(searchInput.toLowerCase())
-  );
+  item.name.toLowerCase().includes(searchInput.toLowerCase()) ||
+  item.att_Date.toLowerCase().includes(searchInput.toLowerCase()) ||
+  item.branch_name.toLowerCase().includes(searchInput.toLowerCase())
+);
+
 
   return (
     <>

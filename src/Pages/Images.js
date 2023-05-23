@@ -34,9 +34,6 @@ function Images(props) {
                                 <p className="card-email">{value.email ? value.email : "-"}</p>
                                 <p className="card-phone">{value.phonenumber ? value.phonenumber : "-"}</p>
                                 <p className="card-gender">{value.gender}</p>
-                                {/* <a type="button" className="btn btn-block text-muted card-btn" data-bs-toggle="modal" data-bs-target="#Profile">
-                                History
-                            </a> */}
                             </div>
 
                         </div>

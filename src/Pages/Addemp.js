@@ -246,8 +246,8 @@ function Addemp() {
 
                 <select id="Branch" class="form-select" name="branch_id" value={branch_id} onChange={(event) => setbranch(event.target.value)}>
                     <option value="">Branches*</option>
-                    <option value="1">El Shorouk</option>
-                    <option value="2">El Shorouk 2</option>
+                    <option value="1">El Shorouk Academy</option>
+                    <option value="2">Mass Communication</option>
 
                 </select><br />
 

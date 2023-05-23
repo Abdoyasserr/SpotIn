@@ -20,7 +20,12 @@ function Home() {
         )
     }, [])
 
-    const filteredData = photo.filter(item => item.name.toLowerCase().includes(searchQuery.toLowerCase()));
+    const filteredData = photo.filter(item =>
+        (item.name && item.name.toLowerCase().includes(searchQuery?.toLowerCase())) ||
+        (item.id && item.id.toString().toLowerCase().includes(searchQuery?.toLowerCase())) ||
+        (item.email && item.email.toLowerCase().includes(searchQuery?.toLowerCase()))
+    );
+
 
     return (
         <>
@@ -39,7 +44,7 @@ function Home() {
                         </a>
                     </div>
                 </div>
-        
+
 
             </div>
             <div className="home-cards">

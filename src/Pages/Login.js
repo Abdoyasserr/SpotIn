@@ -22,9 +22,7 @@ function Login() {
         const phoneRegex = /^\d{11}$/;
 
         const data = {
-            // email:email,
-            // phonenumber:phonenumber,
-            // password:password,
+            
             phonenumber: emailOrPhone,
             password: password,
 
