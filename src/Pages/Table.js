@@ -3,6 +3,7 @@ import ReactPaginate from "react-paginate";
 import React from "react";
 import "./CSS-files/Reports-css/Reports.css";
 
+
 function Table(props) {
 
     const { data } = props;
@@ -22,6 +23,37 @@ function Table(props) {
         const newOffset = (event.selected * itemsPerPage) % data.length;
         setItemOffset(newOffset);
     };
+    const getColor = (time) => {
+        const startTime1 = new Date("1970/01/01 09:00:00 AM");
+        const endTime1 = new Date("1970/01/01 09:15:00 AM");
+        const endTime2 = new Date("1970/01/01 09:30:00 AM");
+        const currentTime = new Date(`1970/01/01 ${time}`);
+
+        if (currentTime >= startTime1 && currentTime <= endTime1) {
+            return "#00A300";
+        } else if (currentTime > endTime1 && currentTime <= endTime2) {
+            return "#A3A300";
+        } else {
+            return "#C23636";
+        }
+    };
+
+    const getColor2 = (time) => {
+        const startTime1 = new Date("1970/01/01 04:30:00 PM");
+        const endTime1 = new Date("1970/01/01 04:45:00 PM");
+        const startTime2 = new Date("1970/01/01 04:45:00 PM");
+        const endTime2 = new Date("1970/01/01 05:00:00 PM");
+        const currentTime = new Date(`1970/01/01 ${time}`);
+
+        if (currentTime >= startTime2 && currentTime <= endTime2) {
+            return "#00A300";
+        } else if (currentTime >= startTime1 && currentTime < endTime1) {
+            return "#A3A300";
+        } else {
+            return "#C23636";
+        }
+    };
+    
 
     return (
         <>
@@ -45,8 +77,8 @@ function Table(props) {
                                 <td>{value.emp_id}</td>
                                 <td>{value.name}</td>
                                 <td>{value.att_Date}</td>
-                                <td>{value.att_Time}</td>
-                                <td>{value.dep_Time}</td>
+                                <td style={{ color: getColor(value.att_Time) }}>{value.att_Time}</td>
+                                <td style={{ color: getColor2(value.dep_Time) }}>{value.dep_Time}</td>
                                 <td>{value.department}</td>
                                 <td>{value.branch_name}</td>
                                 <td>{value.att_comment}</td>
