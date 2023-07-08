@@ -193,16 +193,20 @@ function Addemp() {
     const [logo, setLogo] = useState('');
 
     function handleFileUpload(e) {
-        const file = e.target.files[0];
-        setphoto(file);
-        setLogo(URL.createObjectURL(e.target.files[0]));
-
+      const file = e.target.files[0];
+      if (file) {
+        setLogo(URL.createObjectURL(file));
+      } else {
+        setLogo('');
+      }
     }
+    
     useEffect(() => {
-        if (!logo) {
-            setLogo(defaultLogo);
-        }
+      if (!logo) {
+        setLogo(defaultLogo);
+      }
     }, [logo]);
+    
 
 
 
